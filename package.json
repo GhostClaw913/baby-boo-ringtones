@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
+    "build-tracks": "node scripts/generate-tracks.mjs",
+    "postinstall": "npm run build-tracks",
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
